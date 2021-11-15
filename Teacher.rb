@@ -1,11 +1,11 @@
-require 'Person.rb'
+require 'person.rb'
 
 class Teacher < Person
-  def initialize (specialization)
+  def initialize(specialization)
     @specialization = specialization
   end
 
   def can_use_services?
-    return true
+    true
   end
 end
