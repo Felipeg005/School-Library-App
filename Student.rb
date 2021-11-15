@@ -5,7 +5,9 @@ class Student < Person
     @classroom = classroom
   end
 
+  attr_reader :classroom
+
   def play_hooky
-    "¯\(ツ)/¯"
+    '¯\(ツ)/¯'
   end
 end
