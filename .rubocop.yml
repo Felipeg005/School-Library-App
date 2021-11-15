@@ -32,6 +32,12 @@ Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+Style/EndOfLine: 
+  Enabled: false
+Naming/PredicateName:
+  Enabled: false
+Style/RedundantConditional:
+  Enabled: false
 
 Layout/HashAlignment:
   EnforcedColonStyle: key
