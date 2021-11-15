@@ -56,3 +56,9 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Style/IfWithBooleanLiteralBranches:
+  Enabled: false
+Style/OptionalBooleanParameter:
+  Enabled: false
+Style/RedundantFileExtensionInRequire:
+  Enabled: false
