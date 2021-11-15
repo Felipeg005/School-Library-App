@@ -1,59 +1,32 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+## Create your own Enumerable
 
-# Project Name
+Initial structure for school library app. In this App, you can record what books are in the library and who borrows them and allow a you to:
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+- Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
 
-## Live Demo
+## Prerequisites
 
-[Live Demo Link](https://livedemo.com)
-
+- Before we begin, make sure you have a fresh version of Ruby installed
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+This repository includes files with Ruby that can be used to Add Person, Student and Teacher classes:
 
+- Please run the program in a IRB enviorement
 
-To get a local copy up and running follow these simple example steps.
+## Author
 
-### Prerequisites
+👤 **Juan Felipe Gomez Tobon**
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Felipeg005/)
+- Twitter: [@twitterhandle](https://twitter.com/JuanFGT05)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-felipe-gomez-tobon/)
 
 ## 🤝 Contributing
 
@@ -67,9 +40,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to Microverse for make it possible!
 
 ## 📝 License
 
