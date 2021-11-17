@@ -62,3 +62,5 @@ Style/OptionalBooleanParameter:
   Enabled: false
 Style/RedundantFileExtensionInRequire:
   Enabled: false
+Lint/DuplicateMethods:
+  Enabled: false
