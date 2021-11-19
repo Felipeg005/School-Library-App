@@ -11,6 +11,7 @@ class App
   def initialize
     @books = []
     @people= []
+    @rentals = []
   end
 
   def list_all_books
@@ -62,6 +63,30 @@ class App
     @books.push(new_book)
     puts 'Book created succesfully'
   end
+
+  def create_rental
+    puts 'Select a book from the following list by number'
+    @books.map do |book|
+      puts "#{@books.index(book)}) Title: #{book.title}, Author: #{book.author}"
+    end
+    selected_book = gets.chomp
+    puts 'Select a person from the following list by number (not id)'
+    @people.map do |person|
+      puts "#{@people.index(person)}) Name: #{person.name}, Id: #{person.id}, Age: #{person.age}"
+    end
+    selected_person = gets.chomp
+    puts 'Date'
+    date = gets.chomp
+    new_rental = selected_person.add_rental(date, selected_book)
+    puts 'Rental created succesfully'
+  end
+
+  def list_all_rentals
+    puts 'Person Id: '
+    person_id = gets.chomp
+    
+  end
+
 end
 
 def main
