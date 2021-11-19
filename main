@@ -10,7 +10,7 @@ require './rental'
 class App
   def initialize
     @books = []
-    @people= []
+    @people = []
     @rentals = []
   end
 
@@ -89,7 +89,7 @@ class App
   def list_all_rentals
     puts 'Person Id: '
     person_id = gets.chomp
-    rentals_by_person = @rentals.filter {|rental| rental.person.id == person_id.to_i}
+    rentals_by_person = @rentals.filter { |rental| rental.person.id == person_id.to_i }
     puts 'Rentals: '
     rentals_by_person.each do |rental|
       puts "Date: #{rental.date}, Book: '#{rental.book.title}' by #{rental.book.author}"

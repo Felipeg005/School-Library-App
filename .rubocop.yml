@@ -64,3 +64,9 @@ Style/RedundantFileExtensionInRequire:
   Enabled: false
 Lint/DuplicateMethods:
   Enabled: false
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
