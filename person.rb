@@ -1,4 +1,4 @@
-require 'corrector.rb'
+require './corrector'
 
 class Person
   def initialize(id, age, name = 'unknown', parent_permission = true)

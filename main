@@ -1,2 +1,57 @@
 #!/usr/bin/env ruby
-puts 'hi'
+require './person'
+require './student'
+require './teacher'
+require './book'
+require './classroom'
+require './corrector'
+require './rental'
+
+class App
+  def initialize
+    @books = []
+  end
+
+  def list_all_books
+    puts @books
+    puts 'works'
+  end
+end
+
+def main
+  app = App.new()
+  puts 'Welcome to school library App!'
+  puts ''
+  puts 'Please choose an option by entering a number'
+  puts '1 - List all books'
+  puts '2 - List all people'
+  puts '3 - Create a person'
+  puts '4 - Create a book'
+  puts '5 - Create a rental'
+  puts '6 - List all rentals for given person id'
+  puts '7 - Exit'
+
+  if gets.chomp == '1'
+    app.list_all_books
+  end
+  if gets.chomp == '2'
+    app.list_all_people
+  end
+  if gets.chomp == '3'
+    app.create_person
+  end
+  if gets.chomp == '4'
+    app.create_book
+  end
+  if gets.chomp == '5'
+    app.create_rental
+  end
+  if gets.chomp == '6'
+    app.list_all_rentals
+  end
+  if gets.chomp == '7'
+    puts 'Thank you for using this app'
+    exit 1
+  end
+end
+main()
