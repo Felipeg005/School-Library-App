@@ -1,12 +1,12 @@
-require 'person.rb'
+require './person'
 
 class Teacher < Person
-  def initialize(specialization, id, age, name = 'unknown', parent_permission = true)
-    super(id, age, name, parent_permission)
+  def initialize(specialization, age, name = 'unknown', parent_permission = true)
+    super(age, name, parent_permission)
     @specialization = specialization
   end
 
-  attr_reader :specialization
+  attr_reader :specialization, :rentals
 
   def can_use_services?
     true

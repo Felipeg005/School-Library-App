@@ -1,13 +1,13 @@
-require 'person.rb'
-require 'classroom.rb'
+require './person'
+require './classroom'
 
 class Student < Person
-  def initialize(classroom, id, age, name = 'unknown', parent_permission = true)
-    super(id, age, name, parent_permission)
+  def initialize(classroom, age, name = 'unknown', parent_permission = true)
+    super(age, name, parent_permission)
     @classroom = classroom
   end
 
-  attr_accessor :classroom
+  attr_accessor :classroom, :rentals
 
   def classroom=(classroom)
     @classroom = classroom
