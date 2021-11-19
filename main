@@ -41,6 +41,7 @@ class App
       new_person = Student.new(classroom, name, age, parent_permission)
       @people.push(new_person)
       puts 'Person created succesfully'
+      puts ''
     elsif person_class == '2'
       print 'Specialization: '
       specialization = gets.chomp
@@ -51,6 +52,7 @@ class App
       new_person = Teacher.new(specialization, name, age)
       @people.push(new_person)
       puts 'Person created succesfully'
+      puts ''
     end
   end
 
@@ -62,6 +64,7 @@ class App
     new_book = Book.new(title, author)
     @books.push(new_book)
     puts 'Book created succesfully'
+    puts ''
   end
 
   def create_rental
@@ -77,16 +80,22 @@ class App
     selected_person = gets.chomp
     puts 'Date'
     date = gets.chomp
-    new_rental = selected_person.add_rental(date, selected_book)
+    new_rental = Rental.new(date, @books[selected_book.to_i], @people[selected_person.to_i])
+    @rentals.push(new_rental)
     puts 'Rental created succesfully'
+    puts ''
   end
 
   def list_all_rentals
     puts 'Person Id: '
     person_id = gets.chomp
-    
+    rentals_by_person = @rentals.filter {|rental| rental.person.id == person_id.to_i}
+    puts 'Rentals: '
+    rentals_by_person.each do |rental|
+      puts "Date: #{rental.date}, Book: '#{rental.book.title}' by #{rental.book.author}"
+    end
+    puts ''
   end
-
 end
 
 def main

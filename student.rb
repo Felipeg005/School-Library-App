@@ -7,7 +7,7 @@ class Student < Person
     @classroom = classroom
   end
 
-  attr_accessor :classroom
+  attr_accessor :classroom, :rentals
 
   def classroom=(classroom)
     @classroom = classroom

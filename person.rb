@@ -11,7 +11,7 @@ class Person
   end
 
   attr_reader :id, :parent_permission
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :date, :book
 
   def can_use_services?
     is_of_age? || @parent_permission
@@ -23,7 +23,7 @@ class Person
 
   def add_rental(date, book)
     rental = Rental.new(date, book, self)
-    rentals.push(rental)
+    @rentals.push(rental)
   end
 
   private
