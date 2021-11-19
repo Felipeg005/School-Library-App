@@ -37,7 +37,17 @@ class App
       age = gets.chomp
       print 'Has parent permission? [Y/N]: '
       parent_permission = true if gets.chomp.capitalize == 'Y'
-      new_person = Student.new(classroom, id, name, age, parent_permission)
+      new_person = Student.new(classroom, name, age, parent_permission)
+      @people.push(new_person)
+      puts 'Person created succesfully'
+    elsif person_class == '2'
+      print 'specialization: '
+      specialization = gets.chomp
+      print 'name: '
+      name = gets.chomp
+      print 'age: '
+      age = gets.chomp
+      new_person = Teacher.new(specialization, name, age)
       @people.push(new_person)
       puts 'Person created succesfully'
     end
