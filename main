@@ -26,14 +26,14 @@ class App
   end
 
   def create_person
-    print 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
+    print 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
     person_class = gets.chomp
     if person_class == '1'
-      print 'classroom: '
+      print 'Classroom: '
       classroom = gets.chomp
-      print 'name: '
+      print 'Name: '
       name = gets.chomp
-      print 'age: '
+      print 'Age: '
       age = gets.chomp
       print 'Has parent permission? [Y/N]: '
       parent_permission = true if gets.chomp.capitalize == 'Y'
@@ -41,16 +41,26 @@ class App
       @people.push(new_person)
       puts 'Person created succesfully'
     elsif person_class == '2'
-      print 'specialization: '
+      print 'Specialization: '
       specialization = gets.chomp
-      print 'name: '
+      print 'Name: '
       name = gets.chomp
-      print 'age: '
+      print 'Age: '
       age = gets.chomp
       new_person = Teacher.new(specialization, name, age)
       @people.push(new_person)
       puts 'Person created succesfully'
     end
+  end
+
+  def create_book
+    print 'Title: '
+    title = gets.chomp
+    print 'Author: '
+    author = gets.chomp
+    new_book = Book.new(title, author)
+    @books.push(new_book)
+    puts 'Book created succesfully'
   end
 end
 
