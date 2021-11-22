@@ -1,4 +1,4 @@
-## Create your own Enumerable
+## Library App
 
 Initial structure for school library app. In this App, you can record what books are in the library and who borrows them and allow a you to:
 
